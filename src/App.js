@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import ProjectList from './components/ProjectList'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import React, { useState, useEffect } from 'react';
+import { projectData } from "./data/projectData";
+
 
 function App() {
+  const [navWidth, setNavWidth] = useState('0%');
+  const handleNavOpen = () => {
+    setNavWidth('25%');
+  }
+  const handleNavClose = () => {
+    setNavWidth('0%')
+}
+useEffect(handleNavClose)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={handleNavOpen}>Navbar</button>
+      <Navbar handleNavClose={handleNavClose} width={navWidth} />
+      <ProjectList projectData={projectData} />
+      <Footer />
     </div>
   );
 }
