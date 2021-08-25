@@ -5,12 +5,14 @@ import Card from './Card'
 function ProjectList(props) {
     const mappedProjData = props.projectData.map(project => {
         return (
-            <Link to={`/${project.id}`}>{project.name}</Link>
+            <Link to={`/${project.id}`}><span className={project.name}>{project.name}</span></Link>
         )
     })
     return (
         <Router>
-            {mappedProjData}
+            <div className="projectList">
+                {mappedProjData}
+            </div>
             <Switch>
                 <Route path="/1">
                     <Card projectData={props.projectData[0]} />

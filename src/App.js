@@ -20,12 +20,13 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <button onClick={handleNavOpen}>Navbar</button>
+        <h4 id='navopen' onClick={handleNavOpen}>| Navbar➜</h4>
         <div className="sidenav" style={{ width: navWidth }}>
-          <Link to="/home">Home</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact">Contact</Link>
-          <button onClick={handleNavClose}>X</button>
+          <Link to="/home" onClick={handleNavClose}><img src='images/homepage-icon.png' alt='navbar icon' /><h4>Home</h4></Link>
+          <Link to="/projects" onClick={handleNavClose}><img src='images/projects-icon.png' alt='navbar icon' /><h4>Projects</h4></Link>
+          <Link to="/contact" onClick={handleNavClose}><img src='images/contact-icon.png' alt='navbar icon' /><h4>Contact</h4></Link>
+          <p id='navclose' onClick={handleNavClose}>✖</p>
+          <p className="theX">close</p>
         </div>
         <Switch>
           <Route path="/projects">
