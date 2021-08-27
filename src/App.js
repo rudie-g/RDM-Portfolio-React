@@ -45,7 +45,8 @@ function App() {
         </Route>
         <div className='nativenav'>
           <Link to="/projects"><div className='navBtnContainer'><img src='images/projects-icon.png' alt='navbar icon' /><h4 className='navBtn'>Projects</h4></div></Link>
-          <Link to="/contact" onClick={handleNavClose}><div className='navBtnContainer'><img src='images/contact-icon.png' alt='navbar icon' /><h4 className='navBtn'>Contact</h4></div></Link>
+          <Link to="/contact"><div className='navBtnContainer'><img src='images/contact-icon.png' alt='navbar icon' /><h4 className='navBtn'>Contact</h4></div></Link>
+          <Link to="/"><div className='navBtnContainer'><img src='images/homepage-icon.png' alt='navbar icon' /><h4 className='navBtn'>Hide</h4></div></Link>
         </div>
         <Switch>
           <Route path="/projects">
