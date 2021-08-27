@@ -112,8 +112,6 @@ a {
   padding: 2%;
   flex: 0.5 0 400px;
   flex-wrap: wrap;
-  border-style: solid;
-  border-color: red black;
   border-width: 0.5px 1px;
   background-image: url(images/flower-card-bg.jpg);
   background-repeat: no-repeat;
@@ -124,6 +122,31 @@ a {
 
 .aboutCard h4 {
   color:white;
+}
+
+.aboutHead {
+  margin-bottom: 5rem;
+  margin-left: 1rem;
+  text-align: center;
+  width: 55%;
+  background: rgb(37, 37, 37);
+}
+
+.aboutHead h3 {
+  text-decoration: underline;
+}
+
+.aboutHead span {
+  font-family: 'Staatliches';
+  color: lightblue;
+  font-weight: lighter;
+}
+
+.aboutHead p {
+  text-align: left;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+  width:87%;
 }
 
 .aboutCard li {
@@ -151,7 +174,8 @@ h3 {
   color:  white;
 }
 
-.nativenav Link {
+.nativenav {
+  display: flex;
   flex-direction: row;
 }
 
@@ -172,6 +196,7 @@ h3 {
 }
 
 .myNames {
+  font-family: 'Righteous';
   align-self: center;
   margin-left: 2rem;
   padding-right: 2rem;
@@ -200,7 +225,7 @@ h3 {
 #skill {
   font-family: 'Staatliches';
   background:transparent;
-  font-size: 20px;
+  font-size: 22px;
   position: relative;
   width: 100%;
   height: 100%;

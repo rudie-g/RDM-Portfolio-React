@@ -3,8 +3,10 @@ import React from 'react'
 function About() {
     return (
         <div className='about'>
-            <h3>About:</h3>
-            <p></p>
+            <div className="aboutHead">
+                <h3>About</h3>
+                <p>I'm a web developer proficient in <span>Javascript</span>, specializing in <span>Backend Development</span> but with a passion for <span>UX/UI</span>. I excel at <span>Creative Problem Solving</span> and challenging work environments. I am perfectly capable of, and comfortable with, <span>Full Stack Development</span>, particularly in the <span>MERN Stack</span>, but I am always looking to expand my toolbox with new languages and technologies!</p>
+            </div>
             <div className='aboutContainer'>
                 <div className='aboutCard'>
                     <h4>Strengths</h4>
