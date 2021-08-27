@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 function Header() {
-    const skillsArr = ["Javascript", "UI/UX Design", "Backend Development", "Database/API Management", "Full Stack Development", "MERN Stack", "GraphQL", "MongoDB", "MySQL"]
+    const skillsArr = ["Javascript", "UX/UI Design", "Backend Development", "Database/API Management", "Full Stack Development", "MERN Stack", "GraphQL", "MongoDB", "MySQL"]
     const [skillIndex, setSkillIndex] = useState(0);
 
     useEffect(() => {
