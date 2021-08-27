@@ -4,10 +4,13 @@
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
+  color: white;
   margin-left: 1px;
   align-items: center;
-  background-image: url(images/background-image.jpg); 
-  background-attachment: fixed;
+  background-image: url(images/space-bg.jpg); 
+  background-attachment:scroll;
+  background-size:cover;
+  background-repeat:no-repeat
 }
 
 a {
@@ -21,14 +24,48 @@ a {
   left: 2.5rem;
 }
 
-#navclose {
-  padding-top: 1.5rem;
+.navBtnContainer {
+  margin: 1.5rem;
+  background-color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 10%;
+  border-color: black;
+  min-width: 100px;    
+}
+
+.navclose {
+  margin: 1.5rem;
+  background-color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 10%;
+  border-color: black;
+  min-width: 100px;   
+}
+
+#navopen:hover {
+  cursor: pointer;
+}
+
+.navBtnContainer:hover {
+  cursor: pointer;
+}
+
+.navclose:hover {
+  cursor: pointer;
+}
+
+.navBtn {
   margin: 0;
+  padding: 0;
+  color: black;
 }
 
 .theX {
   margin: 0;
   padding: 0;
+  color: black;
 }
 
 .sidenav {
@@ -38,8 +75,8 @@ a {
   z-index: 1; 
   top: 0; 
   left: 0; 
-  background-color:whitesmoke; 
-  transition: .5s ease; 
+  background-image: url(images/card-bg.jpg);  
+  transition: .5s ease-out; 
   overflow-x: hidden; 
   padding-top: 20px; 
   display: flex; 
@@ -47,18 +84,170 @@ a {
   align-items: center;
 }
 
-.projectCard {
+.header {
+  width: 80%;
+  background-image: url(images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  display: flex;
+}
+
+.about {
+  width: 80%;
+  height: 40rem;
+  padding-top: 2.5rem;
+  display: flex; 
+  flex-direction: column; 
+  align-content: center;
+  background-color: black;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aboutCard {
+  padding: 2%;
+  flex: 0.5 0 400px;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-color: red black;
+  border-width: 0.5px 1px;
+  background-image: url(images/flower-card-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  height: 100%;
+  color: black;
+}
+
+.aboutCard h4 {
+  color:white;
+}
+
+.aboutCard li {
+  list-style-type: none;
+  margin: 1.5rem;
+  background-color: white;
   border-style: groove;
-  border-width: 0.5px;
-  border-radius: 1.5%;
+  border-color: black;
+  border-radius: 15%;
+  min-width: 100px;   
+  padding: 1rem;
+}
+
+.contact {
+  width: 80%;
+  height: 40rem;
+  padding-top: 2.5rem;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  background-color: black;
+}
+
+h3 {
+  color:  white;
+}
+
+.nativenav Link {
+  flex-direction: row;
+}
+
+.projectCard {
   padding: 15px;
   flex: 0.5 0 400px;
   flex-wrap: wrap;
 }
 
-.goodneighbor {
+#theSelf {
+  margin-left: 50px;
+  margin-top: 50px;
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 100%;
+  min-width: 200px;
+  max-width: 400px;
+  -ms-flex-align: start;
+}
+
+.myNames {
+  align-self: center;
+  margin-left: 2rem;
+  padding-right: 2rem;
+}
+
+.skillsBorderBox {
+  display: flex;
+  padding: 1rem;
+  position: relative;
+  padding: 3px;
+  margin-top: 10rem;
+  margin-left: 5rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+#skillsContainer {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  height: 7rem;
+  background: transparent;
+  text-align: center;
+  overflow: hidden;
+}
+
+#skill {
+  font-family: 'Staatliches';
+  background:transparent;
+  font-size: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateY(-100%);
+  -webkit-transform:translateY(-100%);	
+  transform:translateY(-100%);
+  /* Apply animation to this element */	
+  -moz-animation: animateskills 5s linear infinite;
+  -webkit-animation: animateskills 5s linear infinite;
+  animation: animateskills 5s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes animateskills {
+  0%   { -moz-transform: translateY(-100%); }
+  100% { -moz-transform: translateY(100%); }
+}
+@-webkit-keyframes animateskills {
+  0%   { -webkit-transform: translateY(-100%); }
+  100% { -webkit-transform: translateY(100%); }
+}
+@keyframes animateskills {
+  0%   { 
+  -moz-transform: translateY(-100%); /* Firefox bug fix */
+  -webkit-transform: translateY(-100%); /* Firefox bug fix */
+  transform: translateY(-100%); 		
+  }
+  100% { 
+  -moz-transform: translateY(100%); /* Firefox bug fix */
+  -webkit-transform: translateY(100%); /* Firefox bug fix */
+  transform: translateY(100%); 
+  }
+}
+
+
+.generalCard {
+  background-image: url(images/card-bg.jpg);
+  width: 40%;
+  height: 100%;
+}
+
+.GoodNeighbor {
   font-family: 'Pacifico', cursive;
-  color: black;
+  color: white;
   font-weight: 1500;
 }
 
