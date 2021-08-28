@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/rdm-portfolio/precache-manifest.79fbe43e554ef285185188f3758d3776.js"
+  "/RDM-Portfolio-React/precache-manifest.4d1f8631e8e52300bf57fd7a4e90bcf4.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/rdm-portfolio/index.html", {
+workbox.routing.registerNavigationRoute("/RDM-Portfolio-React/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
