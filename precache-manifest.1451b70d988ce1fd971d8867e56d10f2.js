@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "268229f4dd09c37e8723",
-    "url": "/RDM-Portfolio-React/static/css/main.3623715c.chunk.css"
+    "revision": "a513567bbad06c77e697",
+    "url": "/RDM-Portfolio-React/static/css/main.1cac2b55.chunk.css"
   },
   {
-    "revision": "268229f4dd09c37e8723",
+    "revision": "a513567bbad06c77e697",
     "url": "/RDM-Portfolio-React/static/js/main.b2f7ef61.chunk.js"
   },
   {
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/RDM-Portfolio-React/static/media/card-bg.420e92e4.jpg"
   },
   {
-    "revision": "c47e8c4ac3174ebbb59fe9d1eeefffe0",
+    "revision": "19eb27c613c347881f1f97f690c80c60",
     "url": "/RDM-Portfolio-React/index.html"
   }
 ];
