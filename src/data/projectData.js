@@ -7,7 +7,7 @@ export const projectData = [
         techUsed: 'Node, Express, Handlebars, MySQL, Sequelize, Bootstrap',
         deployedLink: 'thegoodneighbor.herokuapp.com',
         githubLink: 'https://github.com/Northwestern-Coding-Bootcamp-Project-2/GoodNeighbor/projects/1',
-        imgSrc: './images/goodneighbor-screenshot.jpg'
+        imgSrc: 'https://i.imgur.com/UsOxQq7.jpeg'
     },
     {
         id: 2,
@@ -15,9 +15,9 @@ export const projectData = [
         description: 'A helpful dashboard for use in a web-development environment. Integrates multiple links, sites, and tools that are frequently used within a web-development lifestyle.',
         role: 'Javascript, Frontend Development, Project Management',
         techUsed: 'jQuery, Express, Node, Firebase',
-        deployedLink: 'thegoodneighbor.herokuapp.com',
+        deployedLink: 'https://www.nubootcampbox.xyz/',
         githubLink: 'https://github.com/BootcampBox/BootCampBox',
-        imgSrc: './images/bcb-screenshot.png'
+        imgSrc: 'https://i.imgur.com/vRKeo2f.png'
     },
     {
         id: 3,
@@ -26,6 +26,6 @@ export const projectData = [
         role: 'Sole Author',
         techUsed: 'Express, Node, Sequelize, MySQL',
         githubLink: 'https://github.com/rudie-g/Ebuy',
-        imgSrc: './images/Ebuy-screenshot.png'
+        imgSrc: 'https://i.imgur.com/0WXwmcP.png'
     }
 ];

@@ -94,13 +94,48 @@ a {
 }
 
 #theSelf {
-  margin-left: 50px;
-  margin-top: 50px;
+  margin: 50px 27% 500px 50px;
   box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 100%;
+
+  align-content: flex-start;
+}
+
+#theSelf img {
   min-width: 200px;
   max-width: 400px;
-  -ms-flex-align: start;
+  border-radius: 100%;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  position:absolute;
+}
+
+#theSelf img.transparent {
+    opacity: 0;
+}
+
+@keyframes theSelfFadeInOut {
+  0% {
+    opacity:1;
+  }
+  45% {
+    opacity:1;
+  }
+  55% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+#theSelf img.top {
+  animation-name: theSelfFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
 }
 
 .myNames {
@@ -281,10 +316,9 @@ h3 {
 }
 
 #projectDisplay {
-  align-self: center;
-  margin: 0 10%;
-  align-content: center;
+  margin: 0;
 }
+
 
 .projectListItem {
   border: solid 1px white;
@@ -404,7 +438,7 @@ h2 {
   }
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:1366px) {
   .App {
     background: black;
   }
@@ -420,6 +454,12 @@ h2 {
   }
   .projectList span {
     margin: 20px;
+  }
+  #theSelf {
+    margin-right: 38%;
+  }
+  .skillsBorderBox {
+    margin-right: 7%;
   }
 }
 

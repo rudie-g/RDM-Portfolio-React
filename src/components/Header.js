@@ -18,7 +18,10 @@ function Header() {
      
     return (
         <div className='header'>
-            <img src='./images/theSelf3.jpg' alt='headshot' id='theSelf' />
+            <div className='shadow' id='theSelf'>
+                <img src='./images/theSelf2.jpg' className='bottom' alt='headshot' />
+                <img src='./images/theSelf3.jpg' className='top' alt='headshot' />
+            </div>
             <br />
             <br />
             <div className='myNames'>

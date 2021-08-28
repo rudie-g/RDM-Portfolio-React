@@ -24,11 +24,9 @@ function App() {
       <div className="App">
         <h4 id='navopen' onClick={handleNavOpen}>| Links ➜</h4>
         <div className="sidenav" style={{ width: navWidth }}>
-          <div className='navBtnContainer' onClick={handleNavClose}><a href='https://www.github.com/rudie-g'><img src='images/Github-icon.png' alt='navbar icon' /><h4 className='navBtn'>Github</h4></a></div>
+          <div className='navBtnContainer' onClick={handleNavClose}><a href='https://www.github.com/rudie-g'><img src='images/github-icon.png' alt='navbar icon' /><h4 className='navBtn'>Github</h4></a></div>
           <div className='navBtnContainer' onClick={handleNavClose}><a href='https://www.linkedin.com/in/rauol-moore-22144620a/'><img src='images/in-Blue.png' alt='navbar icon' /><h4 className='navBtn'>LinkedIn</h4></a></div>
           <div className='navBtnContainer' onClick={handleNavClose}><a href='https://docs.google.com/document/d/1EeSvIrYfqTyJJRiHwth2N5kR4Y0ahdW3BiKQ5R9xOZQ/edit?usp=sharing'><img src='images/homepage-icon.png' alt='navbar icon' /><h4 className='navBtn'>View Resume</h4></a></div>
-          <br />
-          <br />
           <br />
           <br />
           <br />
@@ -54,7 +52,7 @@ function App() {
           </Route>
         </Switch>
             <div id='projectListContainer'>
-              <h2>Projects</h2>
+              <h2>Some of my work</h2>
               <ProjectList projectData={projectData} />
             </div>
         <Footer />
