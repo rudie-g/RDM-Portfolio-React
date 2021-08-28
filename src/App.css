@@ -96,7 +96,6 @@ a {
 #theSelf {
   margin: 50px 27% 500px 50px;
   box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
   align-content: flex-start;
 }
 
@@ -109,7 +108,7 @@ a {
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
   position:absolute;
-}
+  }
 
 #theSelf img.transparent {
     opacity: 0;
@@ -456,7 +455,7 @@ h2 {
     margin: 20px;
   }
   #theSelf {
-    margin-right: 38%;
+    margin-right: 42%;
   }
   .skillsBorderBox {
     margin-right: 7%;
@@ -489,6 +488,7 @@ h2 {
   }
   .aboutCard {
     width: 100%;
+    margin-left: 9%;
   }
   .aboutCard li {
     width: 80%;
@@ -501,4 +501,16 @@ h2 {
   .projectList {
     width: 80%;
   }
+}
+
+@media screen and (max-width: 1024px){
+  #theSelf img {
+    min-width: 100px;
+    max-width: 200px;
+    margin-top: 35%;
+  }
+  .about {
+    width: 100%;
+  }
+  
 }
