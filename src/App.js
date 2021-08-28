@@ -22,11 +22,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h4 id='navopen' onClick={handleNavOpen}>| ➜</h4>
+        <h4 id='navopen' onClick={handleNavOpen}>| Links ➜</h4>
         <div className="sidenav" style={{ width: navWidth }}>
-          <Link to="/" onClick={handleNavClose}><div className='navBtnContainer'><img src='images/homepage-icon.png' alt='navbar icon' /><h4 className='navBtn'>About</h4></div></Link>
-          <Link to="/projects" onClick={handleNavClose}><div className='navBtnContainer'><img src='images/projects-icon.png' alt='navbar icon' /><h4 className='navBtn'>Projects</h4></div></Link>
-          <Link to="/contact" onClick={handleNavClose}><div className='navBtnContainer'><img src='images/contact-icon.png' alt='navbar icon' /><h4 className='navBtn'>Contact</h4></div></Link>
+          <div className='navBtnContainer' onClick={handleNavClose}><a href='https://www.github.com/rudie-g'><img src='images/Github-icon.png' alt='navbar icon' /><h4 className='navBtn'>Github</h4></a></div>
+          <div className='navBtnContainer' onClick={handleNavClose}><a href='https://www.linkedin.com/in/rauol-moore-22144620a/'><img src='images/in-Blue.png' alt='navbar icon' /><h4 className='navBtn'>LinkedIn</h4></a></div>
+          <div className='navBtnContainer' onClick={handleNavClose}><a href='https://docs.google.com/document/d/1EeSvIrYfqTyJJRiHwth2N5kR4Y0ahdW3BiKQ5R9xOZQ/edit?usp=sharing'><img src='images/homepage-icon.png' alt='navbar icon' /><h4 className='navBtn'>View Resume</h4></a></div>
           <br />
           <br />
           <br />
@@ -44,18 +44,19 @@ function App() {
           <About />
         </Route>
         <div className='nativenav'>
-          <Link to="/projects"><div className='navBtnContainer'><img src='images/projects-icon.png' alt='navbar icon' /><h4 className='navBtn'>Projects</h4></div></Link>
-          <Link to="/contact"><div className='navBtnContainer'><img src='images/contact-icon.png' alt='navbar icon' /><h4 className='navBtn'>Contact</h4></div></Link>
-          <Link to="/"><div className='navBtnContainer'><img src='images/homepage-icon.png' alt='navbar icon' /><h4 className='navBtn'>Hide</h4></div></Link>
+          <Link to="/contact"><div className='navBtnContainer'><img src='images/contact-icon.png' alt='navbar icon' /></div><h4 className='navBtn' href='#contactContainer'>Click to Contact</h4></Link>
         </div>
         <Switch>
-          <Route path="/projects">
-            <ProjectList projectData={projectData} />
-          </Route>
           <Route path="/contact">
-            <Contact />
+            <div id='contactContainer'>
+              <Contact />
+            </div>
           </Route>
         </Switch>
+            <div id='projectListContainer'>
+              <h2>Projects</h2>
+              <ProjectList projectData={projectData} />
+            </div>
         <Footer />
       </div>
     </Router>

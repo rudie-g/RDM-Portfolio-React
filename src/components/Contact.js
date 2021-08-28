@@ -4,7 +4,7 @@ import Card from './Card'
 function Contact() {
     return (
         <div className='contact'>
-            <h3>Contact!</h3>
+            <h2>Contact</h2>
             <Card projectData={false} />
         </div>
     )

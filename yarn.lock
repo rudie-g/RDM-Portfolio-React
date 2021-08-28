@@ -1874,7 +1874,7 @@
   optionalDependencies:
     "fsevents" "^1.2.7"
 
-"chokidar@^3.4.0":
+"chokidar@^2.1.8", "chokidar@^3.4.0":
   "integrity" "sha512-ekGhOnNVPgT77r4K/U3GDhu+FQ2S8TnK/s2KbIGXi0SZWuwkZ2QNyfWdZW+TVfn84DpEP7rLeCt2UI6bJ8GwbQ=="
   "resolved" "https://registry.npmjs.org/chokidar/-/chokidar-3.5.2.tgz"
   "version" "3.5.2"
@@ -1891,6 +1891,9 @@
 
 "chokidar2@file:./chokidar2":
   "resolved" "file:node_modules/watchpack/chokidar2"
+  "version" "2.0.0"
+  dependencies:
+    "chokidar" "^2.1.8"
 
 "ci-info@^1.5.0":
   "integrity" "sha512-vsGdkwSCDpWmP80ncATX7iea5DWQemg1UgCW5J8tqjU3lYw4FBYuj89J0CTVomA7BEfvSZd84GmHko+MxFQU2A=="
@@ -1973,6 +1976,11 @@
   "integrity" "sha1-2jCcwmPfFZlMaIypAheco8fNfH4="
   "resolved" "https://registry.npmjs.org/clone/-/clone-1.0.4.tgz"
   "version" "1.0.4"
+
+"clsx@^1.1.1":
+  "integrity" "sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA=="
+  "resolved" "https://registry.npmjs.org/clsx/-/clsx-1.1.1.tgz"
+  "version" "1.1.1"
 
 "co@^4.6.0":
   "integrity" "sha1-bqa989hTrlTMuOR7+gvz+QMfsYQ="
@@ -2767,7 +2775,7 @@
   "resolved" "https://registry.npmjs.org/dotenv-expand/-/dotenv-expand-4.2.0.tgz"
   "version" "4.2.0"
 
-"dotenv@4.0.0":
+"dotenv@^4.0.0", "dotenv@4.0.0":
   "integrity" "sha1-hk7xN5rO1Vzm+V3r7NzhefegzR0="
   "resolved" "https://registry.npmjs.org/dotenv/-/dotenv-4.0.0.tgz"
   "version" "4.0.0"
@@ -2812,6 +2820,11 @@
     "inherits" "^2.0.4"
     "minimalistic-assert" "^1.0.1"
     "minimalistic-crypto-utils" "^1.0.1"
+
+"emailjs-com@^3.2.0":
+  "integrity" "sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA=="
+  "resolved" "https://registry.npmjs.org/emailjs-com/-/emailjs-com-3.2.0.tgz"
+  "version" "3.2.0"
 
 "emoji-regex@^6.1.0":
   "integrity" "sha512-PAHp6TxrCy7MGMFidro8uikr+zlJJKJ/Q6mm2ExZ7HwkyR9lSVFfE3kt36qcwa24BQL7y0G9axycGjK1A/0uNQ=="
@@ -6939,7 +6952,7 @@
     "strip-ansi" "3.0.1"
     "text-table" "0.2.0"
 
-"react-dom@*", "react-dom@^17.0.2":
+"react-dom@*", "react-dom@^17.0.2", "react-dom@>=16":
   "integrity" "sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz"
   "version" "17.0.2"
@@ -6952,6 +6965,11 @@
   "integrity" "sha512-xXUbDAZkU08aAkjtUvldqbvI04ogv+a1XdHxvYuHPYKIVk/42BIOD0zSKTHAWV4+gDy3yGm283z2072rA2gdtw=="
   "resolved" "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-4.0.1.tgz"
   "version" "4.0.1"
+
+"react-hook-form@^7.14.0":
+  "integrity" "sha512-JwnIFedpGwUqxtMLv7lLq8PS6M6snFVeDvAQnG/0lyForn0ucWKMr58j86+9HobUGX6SAFmv7sVIJdLaxxzb8A=="
+  "resolved" "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.14.0.tgz"
+  "version" "7.14.0"
 
 "react-is@^16.6.0", "react-is@^16.7.0", "react-is@^16.8.1":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
@@ -7038,7 +7056,14 @@
   optionalDependencies:
     "fsevents" "^1.1.3"
 
-"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^17.0.2", "react@>=15", "react@17.0.2":
+"react-toastify@^8.0.1":
+  "integrity" "sha512-hHf4sJo9D+SKPcNM5iiri1UDXjZkDvflMGCPNnfm4fjUEC3rH4tRqOQB5IXjroEtArRRf3f26nTsKdficEBBIg=="
+  "resolved" "https://registry.npmjs.org/react-toastify/-/react-toastify-8.0.1.tgz"
+  "version" "8.0.1"
+  dependencies:
+    "clsx" "^1.1.1"
+
+"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17", "react@^17.0.2", "react@>=15", "react@>=16", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"

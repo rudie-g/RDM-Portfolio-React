@@ -28,7 +28,7 @@ function About() {
                     <h4>Hobbies</h4>
                 
                         <li>Songwriting</li>
-                        <li>Writing Poetry</li>
+                        <li>Poetry</li>
                         <li>Combat Sports</li>
                     
                 </div>

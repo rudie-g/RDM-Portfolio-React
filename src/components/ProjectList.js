@@ -5,7 +5,9 @@ import Card from './Card'
 function ProjectList(props) {
     const mappedProjData = props.projectData.map(project => {
         return (
-            <Link to={`/${project.id}`}><span className={project.name}>{project.name}</span></Link>
+            <div className='projectListItem'>
+                <Link to={`/${project.id}`}><span className={project.name}>{project.name}</span></Link>
+            </div>
         )
     })
     return (
@@ -13,6 +15,7 @@ function ProjectList(props) {
             <div className="projectList">
                 {mappedProjData}
             </div>
+            <div id='projectDisplay'>
             <Switch>
                 <Route path="/1">
                     <Card projectData={props.projectData[0]} />
@@ -24,6 +27,7 @@ function ProjectList(props) {
                     <Card projectData={props.projectData[2]} />
                 </Route>
             </Switch>
+            </div>
         </Router>
     )
 }
