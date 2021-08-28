@@ -6,7 +6,7 @@ export const projectData = [
         role: 'Backend Development, UX/UI Design, Project Management',
         techUsed: 'Node, Express, Handlebars, MySQL, Sequelize, Bootstrap',
         deployedLink: 'thegoodneighbor.herokuapp.com',
-        githubLink: 'https://github.com/Northwestern-Coding-Bootcamp-Project-2/GoodNeighbor/projects/1',
+        githubLink: 'https://github.com/Northwestern-Coding-Bootcamp-Project-2/GoodNeighbor',
         imgSrc: 'https://i.imgur.com/UsOxQq7.jpeg'
     },
     {
