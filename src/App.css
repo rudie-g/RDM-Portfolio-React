@@ -526,6 +526,9 @@ h2 {
   .projectList span {
     margin: 1rem 0;
   }
+  .projectListItem {
+    margin: 2% 1%;
+  }
   #theSelf {
     margin-right: 77%;
   }
