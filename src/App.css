@@ -94,7 +94,7 @@ a {
 }
 
 #theSelf {
-  margin: 50px 27% 500px 50px;
+  margin: 50px 451px 500px 50px;
   box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   align-content: flex-start;
 }
@@ -169,6 +169,10 @@ a {
   background: black;
   text-align: center;
   overflow: hidden;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  margin-right: 5%;
 }
 
 #skill {
@@ -425,13 +429,9 @@ h2 {
   font-size: smaller;
 }
 
-@media screen and (max-width:1900px) {
+@media screen and (max-width:2000px) {
   .header {
     flex-direction: column;
-  }
-  .skillsContainer {
-    align-self: center;
-    padding: 0 15rem;
   }
 }
 
@@ -462,19 +462,18 @@ h2 {
     width: 95%;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+    margin-right: 100%;
   }
   .aboutCard h4 {
     text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
   }
 }
 
-@media screen and (max-width:1500px) {
+
+@media screen and (max-width:1500px){
   .aboutHead {
     width: 95%;
   }
-}
-
-@media screen and (max-width:1500px){
   .header {
     flex-direction: column;
   }
