@@ -516,8 +516,17 @@ h2 {
   .about {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 500px) {
   .aboutCard {
     margin-left: 0;
     width: 80%;
-  }  
+  }
+  .projectList span {
+    margin: 1rem 0;
+  }
+  #theSelf {
+    margin-right: 77%;
+  }
 }
