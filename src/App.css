@@ -165,8 +165,6 @@ a {
 }
 
 #skillsContainer {
-  padding-left: 15rem;
-  padding-right: 15rem;
   height: 7rem;
   background: black;
   text-align: center;
@@ -433,6 +431,7 @@ h2 {
   }
   .skillsContainer {
     align-self: center;
+    padding: 0 15rem;
   }
 }
 
@@ -547,5 +546,12 @@ h2 {
   }
   .projectCard a {
     margin: 2%
+  }
+  .skillsBorderBox{
+    align-content: center;
+  }
+  #skillsContainer {
+    margin-right: 24%;
+    width: 188%;
   }
 }
