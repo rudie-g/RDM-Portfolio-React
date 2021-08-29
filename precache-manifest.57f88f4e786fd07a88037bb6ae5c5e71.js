@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "a18ac5f0225778307796",
-    "url": "/RDM-Portfolio-React/static/css/main.1c1a9227.chunk.css"
+    "revision": "c72b8926ebaea71463fc",
+    "url": "/RDM-Portfolio-React/static/css/main.36f9ece7.chunk.css"
   },
   {
-    "revision": "a18ac5f0225778307796",
+    "revision": "c72b8926ebaea71463fc",
     "url": "/RDM-Portfolio-React/static/js/main.7460405d.chunk.js"
   },
   {
@@ -24,10 +24,6 @@ self.__precacheManifest = [
     "url": "/RDM-Portfolio-React/static/js/3.1142b564.chunk.js"
   },
   {
-    "revision": "8e3697d04c6abeca8bf3d32b0cfe5523",
-    "url": "/RDM-Portfolio-React/static/media/flower-card-bg.8e3697d0.jpg"
-  },
-  {
     "revision": "c2dc8aabfaf1b32620a89471f134aa06",
     "url": "/RDM-Portfolio-React/static/media/space-bg.c2dc8aab.jpg"
   },
@@ -36,7 +32,11 @@ self.__precacheManifest = [
     "url": "/RDM-Portfolio-React/static/media/card-bg.420e92e4.jpg"
   },
   {
-    "revision": "fb051842ae67d1f14025d748afcadc89",
+    "revision": "8e3697d04c6abeca8bf3d32b0cfe5523",
+    "url": "/RDM-Portfolio-React/static/media/flower-card-bg.8e3697d0.jpg"
+  },
+  {
+    "revision": "14eb213b443c43bda0ea455444b181b7",
     "url": "/RDM-Portfolio-React/index.html"
   }
 ];
