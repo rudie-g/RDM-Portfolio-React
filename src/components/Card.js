@@ -146,8 +146,8 @@ function Card(props) {
                 <img src={props.projectData.imgSrc} alt={props.projectData.name} />
                 <h3 className={props.projectData.name}>{props.projectData.name}</h3>
                 <span className='projectDetails'>{props.projectData.description}</span>
-                <p>Technologies Used: <span className='projectDetails'>{props.projectData.techUsed}</span></p>
-                <p>My Role: <span className='projectDetails'>{props.projectData.role}</span></p>
+                <p>Technologies Used: </p><span className='projectDetails'>{props.projectData.techUsed}</span>
+                <p>My Role: </p><span className='projectDetails'>{props.projectData.role}</span>
                 <a href={props.projectData.deployedLink}>Deployed Project: {props.projectData.deployedLink}</a>
                 <a href={props.projectData.githubLink}>Github Link: {props.projectData.githubLink}</a>
             </div>

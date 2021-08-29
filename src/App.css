@@ -529,4 +529,20 @@ h2 {
   #theSelf {
     margin-right: 77%;
   }
+  .projectCard {
+    width: 50%;
+    margin: 0 25%;
+  }
+  .projectCard img {
+    margin: 0 15%;
+  }
+  .projectCard p {
+    margin: 2% 27%;
+  }
+  .projectCard span {
+    margin: 2% 15%;
+  }
+  .projectCard a {
+    margin: 2%
+  }
 }
