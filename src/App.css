@@ -435,7 +435,7 @@ h2 {
   }
 }
 
-@media screen and (max-width:1368px) {
+@media screen and (max-width:1500px) {
   .App {
     background: black;
   }
@@ -467,18 +467,14 @@ h2 {
   .aboutCard h4 {
     text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
   }
-}
-
-
-@media screen and (max-width:1500px){
   .aboutHead {
     width: 95%;
   }
   .header {
     flex-direction: column;
   }
-  .skillsContainer {
-    align-self: center;
+  #skillsContainer {
+    margin-left: 100%;
   }
   .aboutContainer {
     flex-direction: column;
@@ -516,7 +512,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .aboutCard {
     margin-left: 0;
     width: 80%;
@@ -528,7 +524,7 @@ h2 {
     margin: 2% 1%;
   }
   #theSelf {
-    margin-right: 77%;
+    margin-right: 62%;
   }
   .projectCard {
     width: 50%;
@@ -550,7 +546,7 @@ h2 {
     align-content: center;
   }
   #skillsContainer {
-    margin-right: 24%;
-    width: 188%;
+    margin-right: 115%;
+    width: 165%;
   }
 }
