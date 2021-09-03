@@ -83,7 +83,7 @@ function Card(props) {
                                                     pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
                                                 })}
                                                 className='form-control formInput'
-                                                placeholder='Email address'
+                                                placeholder='Your email address'
                                             ></input>
                                             {errors.email && (
                                                 <span className='errorMessage'>Please enter a valid email address</span>
