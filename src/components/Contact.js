@@ -4,8 +4,9 @@ import Card from './Card'
 function Contact() {
     return (
         <div className='contact'>
-            <h2>Contact</h2>
+            <h2>Email Me</h2>
             <Card projectData={false} />
+            <p>rauoldm@gmail.com</p>
         </div>
     )
 }
