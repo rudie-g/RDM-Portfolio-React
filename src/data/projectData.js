@@ -11,13 +11,13 @@ export const projectData = [
     },
     {
         id: 2,
-        name: 'BootCampBox',
-        description: 'A helpful dashboard for use in a web-development environment. Integrates multiple links, sites, and tools that are frequently used within a web-development lifestyle.',
-        role: 'Javascript, Frontend Development, Project Management',
-        techUsed: 'jQuery, Express, Node, Firebase',
-        deployedLink: 'https://www.nubootcampbox.xyz/',
-        githubLink: 'https://github.com/BootcampBox/BootCampBox',
-        imgSrc: 'https://i.imgur.com/vRKeo2f.png'
+        name: 'Tripsight',
+        description: 'A one stop shop for all things travel content, pictures for planning future travel or just getting your fix of far off places! Allows the user to create an account, post blogs and search other users blogs.',
+        role: 'Backend Development, API Management, Frontend Development',
+        techUsed: 'React, Node.js, MongoDB, Mongoose, GraphQL, Apollo, JavaScript and Sass',
+        deployedLink: 'https://tripsight.herokuapp.com/',
+        githubLink: 'https://github.com/travel-app-devs/TripSight',
+        imgSrc: 'https://github.com/travel-app-devs/TripSight/blob/main/client/public/previewImage1.png?raw=true'
     },
     {
         id: 3,
