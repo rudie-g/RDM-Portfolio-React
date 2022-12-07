@@ -48,7 +48,7 @@ function Contact() {
     };
 
     return (
-        <div className='contactFormDiv'>
+        <div className='contactFormDiv' id="contact">
             <div>
                 <div>
                     <div>
@@ -138,4 +138,4 @@ function Contact() {
     )
 }
 
-export default Contact
+export default Contact;

@@ -77,7 +77,7 @@ const styles ={
 const Projects = () => {
 
     return (
-      <div className="projectsContainer">
+      <div className="projectsContainer" id="projects">
           <Row className="projectsRow">
               {data.map((data, k) => {
                 if (data.id !== 4) {

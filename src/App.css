@@ -170,7 +170,6 @@ span {
   bottom: 2.5rem;
   width: 100%;
   padding: 3rem;
-  margin-top: 5rem;;
   color: white;
   background: #212529;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -178,8 +177,13 @@ span {
   text-align: center;
 }
 
+/* #navbarNav {
+  position: fixed;
+} */
+
 .contactFormDiv   {
   padding: 20%;
+  margin-top: 5rem;
   display: flex;
   background: #315B5D;
   width: 100%;
@@ -217,4 +221,11 @@ span {
   font-size: 15px;
   font-weight: 300;
   color: rgb(255, 187, 0);
+}
+
+.ourNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }

@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ParticlesBg from "particles-bg";
 import '../App.css'
 import Projects from './Projects';
+import Contact from './Contact';
 import Footer from './Footer';
 
 const styles = {
@@ -16,7 +17,7 @@ const About = () => {
     <React.Fragment>
 
 
-      <div className="container " style={styles.margins}>
+      <div className="container" style={styles.margins}>
         <ParticlesBg type="cobweb" color="#ffbb00" bg={{
           position: "absolute",
           zIndex: -1,
@@ -82,6 +83,7 @@ const About = () => {
         </div>
       </div>
       <Projects />
+      <Contact />
       <Footer />
     </React.Fragment>
   );
