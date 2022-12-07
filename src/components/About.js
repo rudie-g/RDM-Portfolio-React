@@ -22,7 +22,7 @@ const About = () => {
           zIndex: -1,
           top: 0,
           left: 0,
-          width: 1900,
+          width: "100%",
           height: 1200
         }} />
         <div className="row ">

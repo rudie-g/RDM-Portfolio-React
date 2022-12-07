@@ -23,7 +23,7 @@ const data = [
       name: 'Tripsight',
       description: 'A one stop shop for all things travel content, pictures for planning future travel or just getting your fix of far off places! Allows the user to create an account, post blogs and search other users blogs.',
       role: 'Backend Development, API Management, Frontend Development',
-      techUsed: 'React, Node.js, MongoDB, Mongoose, GraphQL, Apollo, JavaScript and Sass',
+      techUsed: 'React, Node.js, MongoDB, Mongoose, GraphQL, Apollo, JWT, and Sass',
       deployedLink: 'https://tripsight.herokuapp.com/',
       view: 'https://github.com/travel-app-devs/TripSight',
       imgSrc: 'https://github.com/travel-app-devs/TripSight/blob/main/client/public/previewImage1.png?raw=true'
@@ -42,7 +42,7 @@ const data = [
       name: 'livreSearch',
       description: 'A MERN stack app to search for and save books',
       role: 'Sole Author',
-      techUsed: 'MongoDB, React, Node, Express',
+      techUsed: 'React, Node.js, MongoDB, Mongoose, GraphQL, Apollo, JWT, and Express',
       view: 'https://github.com/rudie-g/livreSearch',
       imgSrc: 'https://i.imgur.com/9T72LMW.png?1'
   }
@@ -54,16 +54,18 @@ const styles ={
     height: '30rem',
     width: '27rem',
     textAlign: 'center',
-    
+    marginRight: "20%",
   },
+  
   textStyle: {
-    marginTop: '30px'
-      
-    
+    marginTop: '15px'
+  },
+  techStyle: {
+    lineHeight: "16px"
   },
   linkStyle: {
    
-    marginTop: '30px'
+    marginTop: '15px'
   },
   wrapper: {
     padding: '30px',
@@ -84,11 +86,12 @@ const Projects = () => {
                       <Card style={styles.cardStyle}>
                           <Card.Img src={data.imgSrc} />
 
-                          <Card.Body >
+                          <Card.Body style={styles.cardBodyStyle}>
                               <Card.Title style={styles.textStyle}>{data.name}</Card.Title>
                               <Card.Text style={styles.textStyle}>{data.description}</Card.Text>
+                              <Card.Text style={styles.techStyle}>Tech Used: {data.techUsed}</Card.Text>
                               
-                                <a href={data.view}> <Button variant="dark" className='mt-auto' >View Code</Button></a> 
+                                <a href={data.view}> <Button variant="dark" className='mt-auto' style={{padding: ".8%"}}>View Code</Button></a> 
                             
                           </Card.Body>
                       </Card>
@@ -103,7 +106,7 @@ const Projects = () => {
                               <Card.Title style={styles.textStyle}>{data.name}</Card.Title>
                               <Card.Text style={styles.textStyle}>{data.description}</Card.Text>
                               
-                                <a href={data.view}> <Button variant="dark" className='mt-auto' >View Site</Button></a> 
+                                <a href={data.view}> <Button variant="dark" className='mt-auto' style={{padding: ".8%"}}>View Site</Button></a> 
                             
                           </Card.Body>
                       </Card>
