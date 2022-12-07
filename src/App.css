@@ -1,112 +1,58 @@
 .App {
   text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
-  margin-left: 1px;
-  align-items: center;
-  background-image: url(images/space-bg.jpg); 
-  background-attachment:scroll;
-  background-size:cover;
-  background-repeat:no-repeat;
 }
 
-a {
-  text-decoration: none;
+.App-link {
+  color: #61dafb;
 }
 
-#navopen {
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
-  left: 2.5rem;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.navBtnContainer {
-  margin: 1.5rem;
-  background-color: white;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 10%;
-  border-color: black;
-  min-width: 100px;   
-  padding-top: 0.5rem; 
-}
-
-.navclose {
-  margin: 1.5rem;
-  background-color: white;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 10%;
-  border-color: black;
-  min-width: 100px;   
-}
-
-#navopen:hover {
-  cursor: pointer;
-}
-
-.navBtnContainer:hover {
-  cursor: pointer;
-  box-shadow: inset 0 0 5px black;
-}
-
-.navclose:hover {
-  cursor: pointer;
-  box-shadow: inset 0 0 5px black;
-}
-
-.navBtn {
-  margin: 0;
-  padding: 0.25rem 0.5rem;
-  color: black;
-}
-
-.theX {
-  margin: 0;
-  padding: 0;
-  color: black;
-}
-
-.sidenav {
-  height: 100%;  
-  width: 25%;  
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
-  left: 0; 
-  background-image: url(images/card-bg.jpg);  
-  transition: .5s ease-out; 
-  overflow-x: hidden; 
-  padding-top: 20px; 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
-}
-
-.header {
-  width: 80%;
-  background-color: black;
-  display: flex;
-}
+/* .tab{
+  background-color: white
+} */
 
 #theSelf {
-  margin: 50px 451px 500px 50px;
   box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  align-content: flex-start;
 }
 
 #theSelf img {
-  min-width: 200px;
+  min-width: 300px;
   max-width: 400px;
   border-radius: 100%;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 10s ease-in-out;
+  -moz-transition: opacity 10s ease-in-out;
+  -o-transition: opacity 10s ease-in-out;
+  transition: opacity 10s ease-in-out;
   position:absolute;
   }
 
@@ -114,15 +60,42 @@ a {
     opacity: 0;
 }
 
+span {
+  font-family: 'Staatliches';
+  color: white;
+  font-weight: lighter;
+}
+
 @keyframes theSelfFadeInOut {
   0% {
     opacity:1;
   }
-  45% {
-    opacity:1;
+  10% {
+    opacity: .90;
   }
-  55% {
-    opacity:0;
+  20% {
+    opacity: .80;
+  }
+  30% {
+    opacity: .70;
+  }
+  40% {
+    opacity: .60;
+  }
+  50% {
+    opacity: .50;
+  }
+  60% {
+    opacity: .40;
+  }
+  70% {
+    opacity: .30;
+  }
+  80% {
+    opacity: .20;
+  }
+  90% {
+    opacity: .10;
   }
   100% {
     opacity:0;
@@ -133,12 +106,83 @@ a {
   animation-name: theSelfFadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-direction: alternate;
 }
 
+.leftJust {
+  text-align: center;
+  background: #315B5D;
+  color:rgb(255, 187, 0);
+  padding: 1.75%;
+}
+
+.projectsRow {
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background: #1C2623;
+  width: 80%;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.wrap-circles {
+  display: flex;
+  min-height: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  margin-left: 0%;
+  margin-right:-5%;
+}
+
+.circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border-radius: 50%;
+  background: #FFCDB2;
+  overflow: hidden;
+  background-image: conic-gradient(#ffbb00 100%, rgb(170, 167, 167) 0);
+}
+
+.footer {
+  bottom: 2.5rem;
+  width: 100%;
+  padding: 3rem;
+  margin-top: 5rem;;
+  color: white;
+  background: #212529;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: smaller;
+  text-align: center;
+}
+
+.contactFormDiv   {
+  padding: 20%;
+  display: flex;
+  background: #315B5D;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
 .myNames {
-  align-self: center;
+  text-align: center;
   margin-left: 2rem;
   padding-right: 2rem;
 }
@@ -152,401 +196,19 @@ a {
   font-size: larger;
 }
 
-.skillsBorderBox {
+.circle .inner {
   display: flex;
-  padding: 1rem;
-  position: relative;
-  padding: 3px;
-  margin-top: 10rem;
-  margin-left: 5rem;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background: black;
-}
-
-#skillsContainer {
-  height: 7rem;
-  background: black;
-  text-align: center;
-  overflow: hidden;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  width: 100%;
-  margin-right: 5%;
-}
-
-#skill {
-  font-family: 'Staatliches';
-  background:black;
-  font-size: 22px;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  line-height: 50px;
-  text-align: center;
-  /* Starting position */
-  -moz-transform:translateY(-100%);
-  -webkit-transform:translateY(-100%);	
-  transform:translateY(-100%);
-  /* Apply animation to this element */	
-  -moz-animation: animateskills 5s linear infinite;
-  -webkit-animation: animateskills 5s linear infinite;
-  animation: animateskills 5s linear infinite;
-}
-/* Move it (define the animation) */
-@-moz-keyframes animateskills {
-  0%   { -moz-transform: translateY(-100%); }
-  100% { -moz-transform: translateY(100%); }
-}
-@-webkit-keyframes animateskills {
-  0%   { -webkit-transform: translateY(-100%); }
-  100% { -webkit-transform: translateY(100%); }
-}
-@keyframes animateskills {
-  0%   { 
-  -moz-transform: translateY(-100%); /* Firefox bug fix */
-  -webkit-transform: translateY(-100%); /* Firefox bug fix */
-  transform: translateY(-100%); 		
-  }
-  100% { 
-  -moz-transform: translateY(100%); /* Firefox bug fix */
-  -webkit-transform: translateY(100%); /* Firefox bug fix */
-  transform: translateY(100%); 
-  }
-}
-
-.about {
-  width: 80%;
-  height: 40rem;
-  padding-top: 2.5rem;
-  display: flex; 
-  flex-direction: column; 
-  align-content: center;
-  background-color: black;
-}
-
-.aboutContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.aboutCard {
-  padding: 2%;
-  flex: 0.5 0 400px;
-  flex-wrap: wrap;
-  border-width: 0.5px 1px;
-  background-image: url(images/flower-card-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: 5px center;
-  height: 100%;
-  color: black;
-}
-
-.aboutCard h4 {
-  color:white;
-}
-
-.aboutHead {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5rem;
-  margin-left: 1rem;
-  text-align: center;
-  width: 55%;
-  background: rgb(37, 37, 37);
-  box-shadow: inset 0 0 5px black;
-  flex-wrap: wrap;
-}
-
-.aboutHead h3 {
-  text-decoration: underline;
-  font-family: 'Righteous';
-}
-
-.aboutHead p {
-  margin-right: 2rem;
-}
-
-.aboutHead span {
-  font-family: 'Staatliches';
-  color: lightblue;
-  font-weight: lighter;
-}
-
-.aboutHead p {
-  text-align: left;
-  margin-left: 3rem;
-  margin-bottom: 2rem;
-  width:87%;
-}
-
-.aboutCard li {
-  list-style-type: none;
-  margin: 1.5rem;
-  background-color: white;
-  border-style: groove;
-  border-color: black;
-  border-radius: 15%;
-  min-width: 100px;   
-  padding: 1rem;
-}
-
-h3 {
-  color:  white;
-}
-
-.nativenav {
-  display: flex;
-  flex-direction: row;
-  margin: 2rem;
-}
-
-.nativenav h4 {
-  color: white;
-}
-
-.nativenav .navBtnContainer {
-  padding: 0;
-}
-
-#projectListContainer {
-  margin-top: 4rem;
-}
-
-#projectDisplay {
-  margin: 0;
-}
-
-
-.projectListItem {
-  border: solid 1px white;
-  border-radius: 5%;
-  background: black;
-  padding: 0.1rem;
-  margin: 0 2rem;
-}
-
-.projectListItem:hover {
-  box-shadow: inset 0 0 10px white;
-}
-
-.projectListItem:active {
-  background-color: white;
-}
-.projectCard {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  padding: 15px 0px;
-  flex: 0.5 0 400px;
-  flex-wrap: wrap;
-  background: rgb(37, 37, 37);
-  box-shadow: inset 0 0 5px black;
-  width: 85%;
-  text-align: center;
-  margin-left: 7rem;
-  color: white;
-}
-
-.projectDetails {
-  color: lightblue;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 1500;
-}
-
-.projectCard a {
-  color:lightpink;
-  text-decoration: none;
-  margin: 1rem 0;
-}
-
-.projectCard img {
-  width:80%;
-}
-
-.contact {
-  padding-top: 2.5rem;
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
-  background-color: black;
-}
-
-.contactForm   {
-  background-image: url(images/card-bg.jpg);
-  width: 100%;
-  height: 100%;
-}
-
-.GoodNeighbor {
-  font-family: 'Pacifico', cursive;
-  color: white;
-  font-weight: 1500;
-}
-
-.BootCampBox {
-  color: white;
-  font-family: 'Righteous';
-  font-weight: 1500;
-}
-
-.Ebuy {
-  color: white;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-weight: 1500;
-}
-
-h2 {
-  font-family: 'Staatliches', 'Righteous';
-  text-decoration: underline;
-}
-
-.projectList {
-  margin: 2rem;
-  padding: 5rem;
-  display: inline-flex;
-  flex-direction: row;
-}
-
-.projectListItem {
-  display:inline;
-}
-
-
-.projectList span {
-  margin: 1rem 5rem;
-}
-
-.footer {
-  bottom: 2.5rem;
-  width: 95%;
-  padding: 3rem;
-  margin-top: 5rem;;
-  background: rgb(37, 37, 37);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: smaller;
-}
-
-@media screen and (max-width:2000px) {
-  .header {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width:1500px) {
-  .App {
-    background: black;
-  }
-  .aboutHead {
-    width:120%;
-  }
-  .projectCard {
-    margin-left:2rem;
-  }
-  .projectList {
-    display: flex;
-    flex-direction: row;
-  }
-  .projectList span {
-    margin: 20px;
-  }
-  #theSelf {
-    margin-right: 42%;
-  }
-  .skillsBorderBox {
-    margin-right: 7%;
-  }
-  #skillsContainer {
-    width: 95%;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    margin-right: 100%;
-  }
-  .aboutCard h4 {
-    text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
-  }
-  .aboutHead {
-    width: 95%;
-  }
-  .header {
-    flex-direction: column;
-  }
-  #skillsContainer {
-    margin-left: 100%;
-  }
-  .aboutContainer {
-    flex-direction: column;
-    margin-bottom: 2rem;
-  }
-  .about {
-    width: 60%;
-    height: 10%;
-  }
-  .aboutCard {
-    width: 100%;
-    margin-left: 9%;
-  }
-  .aboutCard li {
-    width: 80%;
-  }
-  .projectListContainer {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-  }
-  .projectList {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 1024px){
-  #theSelf img {
-    min-width: 100px;
-    max-width: 200px;
-    margin-top: 35%;
-  }
-  .about {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .aboutCard {
-    margin-left: 0;
-    width: 80%;
-  }
-  .projectList span {
-    margin: 1rem 0;
-  }
-  .projectListItem {
-    margin: 2% 1%;
-  }
-  #theSelf {
-    margin-right: 62%;
-  }
-  .projectCard {
-    width: 50%;
-    margin: 0 25%;
-  }
-  .projectCard img {
-    margin: 0 15%;
-  }
-  .projectCard p {
-    margin: 2% 27%;
-  }
-  .projectCard span {
-    margin: 2% 15%;
-  }
-  .projectCard a {
-    margin: 2%
-  }
-  .skillsBorderBox{
-    align-content: center;
-  }
-  #skillsContainer {
-    margin-right: 115%;
-    width: 165%;
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115px;
+  height: 115px;
+  background: rgb(88, 86, 86);
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(255, 187, 0);
 }
