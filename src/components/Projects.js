@@ -78,7 +78,7 @@ const Projects = () => {
 
     return (
       <div className="projectsContainer" id="projects">
-        <h1>Some of my work</h1>
+        <h1 id="someWork">Some of my work</h1>
           <Row className="projectsRow">
               {data.map((data, k) => {
                 if (data.id !== 4) {
